@@ -1,0 +1,5 @@
+{
+    "python.formatting.provider": "black",
+    "editor.lineNumbers": "on",
+    "python.defaultInterpreterPath": "C:\\Users\\Jodis\\Miniconda3\\envs\\django\\python.exe",
+}
