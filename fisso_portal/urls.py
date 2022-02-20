@@ -16,12 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from rest_framework import routers
-from confman import views
 
 
 router = routers.DefaultRouter()
-router.register(r"users", views.UserViewSet)
-router.register(r"groups", views.GroupViewSet)
 
 
 urlpatterns = [
@@ -29,7 +26,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("ipam/", include("ipam.urls")),
     path("inventory/", include("inventory.urls")),
-    path("confman/", include("confman.urls")),
     path("sites/", include("sites.urls")),
     path("tickets/", include("tickets.urls")),
     path("scripts/", include("scripts.urls")),

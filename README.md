@@ -18,7 +18,7 @@
 - [ ] Obtain the total number of SFPs for each device.
 
 
-## Testing API Funtionality
+# Testing API Funtionality
 
 #### Users
 
@@ -31,3 +31,40 @@ curl -H 'Accept: application/json; indent=4' -u USERNAME:PASSWORD http://127.0.0
 ```shell
 curl -H 'Accept: application/json; indent=4' -u USERNAME:PASSWORD http://127.0.0.1:8000/groups/
 ```
+
+# Creating Models
+
+```python
+from django.db import models
+
+
+class Example(models.Model):
+    class Meta:
+        db_table = "Example"
+        verbose_name = "Example"
+        verbose_name_plural = "Example"
+
+    title = models.CharField(
+        max_length=255,
+        blank=False,
+        null=False,
+        default=None,
+        verbose_name="Title",
+        help_text="Title.",
+    )
+
+    category = models.CharField(
+        max_length=255,
+        blank=False,
+        null=False,
+        default="",
+        verbose_name="Category",
+        help_text="Category.",
+    )
+
+
+    def __str__(self):
+        return self.Example
+```
+
+

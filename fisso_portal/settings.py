@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "inventory.apps.InventoryConfig",
     "ipam.apps.IpamConfig",
-    "confman.apps.ConfmanConfig",
     "sites.apps.SitesConfig",
     "tickets.apps.TicketsConfig",
     "scripts.apps.ScriptsConfig",
